@@ -1,0 +1,70 @@
+.App {
+    text-align: center;
+    #quote-box {
+        padding: 25px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+
+        #text {
+            margin-bottom: 0px;
+            #quote-icon {
+                margin-right: 10px;
+            }
+        }
+        #author {
+            margin-top: 0;
+            text-align: end;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            min-height: 50px;
+            position: relative;
+            #tweet-quote {
+                display: flex;
+                padding: 11px;
+                color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                max-width: 50px;
+
+                height: 100%;
+                align-self: center;
+                justify-content: center;
+            }
+
+            #tumblr-quote {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                top: 2px;
+                left: 50px;
+                padding: 11px 16px;
+                color: white;
+                border-radius: 10px;
+            }
+
+            #new-quote {
+                display: inline-block;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .App-header {
+        padding: 10%;
+        background-color: #282c34;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+}
