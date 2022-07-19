@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+
     #quote-box {
         padding: 25px;
         background-color: white;
@@ -8,6 +9,8 @@
 
         #text {
             margin-bottom: 0px;
+            animation: backgroundColor 2s ease-in-out;
+
             #quote-icon {
                 margin-right: 10px;
             }
@@ -66,5 +69,27 @@
         justify-content: center;
         font-size: calc(10px + 2vmin);
         color: white;
+    }
+}
+.show {
+    animation: quote 2s ease-in-out;
+    @keyframes quote {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+.hide {
+    animation: author 2s ease-in-out;
+    @keyframes author {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
